@@ -1,0 +1,135 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Тестовое задание</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/listOfFriends.css" rel="stylesheet" />
+    <link href="css/profile.css" rel="stylesheet" />
+
+    <script src="js/vendor/jquery-3.2.1.min.js"></script>
+    <script src="js/vendor/jquery.maskedinput.min.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/editor.js"></script>
+    <script src="js/interests.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+
+    <div class="add-interests">
+        <input class="input-interest" />
+        <button class="add-interest-btn">Добавить интерес</button>
+    </div>
+    
+    <div class="block">
+        <div class="headers">
+            <div class="tabs first-tab selected" data-page='first-content-elem'>Профиль</div>
+            <div class="tabs second-tab" style="margin-left: 10px;" data-page='second-content-elem'>Друзья пользователя</div>
+        </div>
+        <div class="content">
+            <div class="content-elem first-content-elem selected">
+                <div class="profile-img">
+                    <img class="profile-img-icon" src="img/ArcheAge_sample.jpg"/>
+                    <button class="add-to-friends-btn">Добавить в друзья</button>
+                </div>
+                <div class="profile-data">
+                    <ul class="name-city-list">
+                        <li class="profile-name"><input class="profile-name" name="name" type="text" placeholder="Виталя Гора" /></li>
+                        <li class="profile-city">г. Нижние Шахты</li>
+                    </ul>
+                    <ul class="personal-list">
+                        <li class="personal-list-elem">Семейное положение</li> 
+                        <li class="personal-list-elem relationship-status">холост</li>
+                        <li class="personal-list-elem">Телефон</li>
+                        <li class="personal-list-elem"><input class="number" name="email" type="text" placeholder="+7 (440) 554-32-12" /><img class="status-number" src=""/></li>
+                        <li class="personal-list-elem">E-mail</li>
+                        <li class="personal-list-elem"><input class="email" name="email" type="text" placeholder="vitalya@gora.ru"/><img class="status-email" src=""/></li>
+                    </ul>
+                    <h5>Интересы</h5>
+                    <div class="interests">
+                        <button class="interests-btn">музыка</button>
+                        <button class="interests-btn">компьютеры</button>
+                        <button class="interests-btn">радио</button>
+                    </div>
+                </div>
+            </div>
+            <div class="content-elem second-content-elem">
+                <ul class="list-friends">
+                    <li class="list-elem">
+                        <div class="list-elem-block">
+                            <img class="list-elem-block-img" src="img/Warface_sample.jpg" />
+                            <ul class="list-info">
+                                <li class="list-info-elem user-name">Лев Бронштейн</li>
+                                <li class="list-info-elem user-city">г. Ханты-Мансийск</li>
+                            </ul>
+                            <span class="user-status">Online</span>
+                        </div>
+                    </li>
+                    <li class="list-elem">
+                        <div class="list-elem-block">
+                            <img class="list-elem-block-img" src="img/ArcheAge_sample.jpg" />
+                            <ul class="list-info">
+                                <li class="list-info-elem user-name">Находка Капитал</li>
+                                <li class="list-info-elem user-city">г. Усть-Бельск</li>
+                            </ul>
+                            <span class="user-status"></span>
+                        </div>
+                    </li>
+                    <li class="list-elem">
+                        <div class="list-elem-block">
+                            <img class="list-elem-block-img" src="img/Warface_sample.jpg" />
+                            <ul class="list-info">
+                                <li class="list-info-elem user-name">Яндекс Петренко</li>
+                                <li class="list-info-elem user-city">г. Пермь</li>
+                            </ul>
+                            <span class="user-status"></span>
+                        </div>
+                    </li>
+                    <li class="list-elem">
+                        <div class="list-elem-block">
+                            <img class="list-elem-block-img" src="img/ArcheAge_sample.jpg" />
+                            <ul class="list-info">
+                                <li class="list-info-elem user-name">Успех Возможностей</li>
+                                <li class="list-info-elem user-city">г. Радонеж</li>
+                            </ul>
+                            <span class="user-status">Online</span>
+                        </div>
+                    </li>
+                    <li class="list-elem">
+                        <div class="list-elem-block">
+                            <img class="list-elem-block-img" src="img/Warface_sample.jpg" />
+                            <ul class="list-info">
+                                <li class="list-info-elem user-name">Инна Нашлась</li>
+                                <li class="list-info-elem user-city">г. Омск</li>
+                            </ul>
+                            <span class="user-status">Online</span>
+                        </div>
+                    </li>
+                    <li class="list-elem">
+                        <div class="list-elem-block">
+                            <img class="list-elem-block-img" src="img/ArcheAge_sample.jpg" />
+                            <ul class="list-info">
+                                <li class="list-info-elem user-name">Алла Подольская</li>
+                                <li class="list-info-elem user-city">г. Петропавловск-Камчатский</li>
+                            </ul>
+                            <span class="user-status">Online</span>
+                        </div>
+                    </li>
+                    <li class="list-elem">
+                        <div class="list-elem-block">
+                            <img class="list-elem-block-img" src="img/Warface_sample.jpg" />
+                            <ul class="list-info">
+                                <li class="list-info-elem user-name">sad</li>
+                                <li class="list-info-elem user-city">sad</li>
+                            </ul>
+                            <span class="user-status">Online</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

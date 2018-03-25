@@ -1,0 +1,108 @@
+﻿html {
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+    font-family: Arial;
+}
+
+.add-interests {
+    position: absolute;
+    top: 20%;
+    left: 11%;
+    width: 200px;
+    height: 80px;
+    padding: 10px;
+    border-radius: 3px 3px 3px 3px;
+    background-color: white;
+}
+
+.input-interest {
+    width: 100%;
+    height: 30px;
+    background-color: whitesmoke;
+    font-size: 20px;
+}
+
+.add-interest-btn {
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    border: 0px;
+    background-color: #0e72a9;
+    color: white;
+}
+
+.add-interest-btn:hover {
+    cursor: pointer;
+    background-color: lightblue;
+}
+
+.block {
+    position: absolute;
+    top: 20%;
+    left: 28%;
+    width: auto;
+    height: auto;
+}
+
+.tabs {
+    width: auto;
+    height: auto;
+    left: 35px;
+    padding: 10px;
+    border-radius: 5px 5px 0px 0px;
+    float: left;
+    background-color: #0e72a4;
+    color: white;
+    
+
+}
+
+.tabs.selected {
+    color: black;
+    background-color: white;
+}
+
+.tabs:hover {
+    cursor: pointer;
+    background-color: lightblue;
+}
+
+.content {
+    top: 100%;
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    max-width: 600px;
+    border-radius: 0px 5px 5px 5px;
+    padding: 15px 15px 10px 15px;
+    background-color: white;
+}
+
+.content-elem {
+    display: none;
+}
+
+.content-elem.selected {
+    height: 100%;
+    width: 100%;
+    display: block;
+    overflow-y: auto;
+    scrollbar-face-color: #0e72a4;
+    scrollbar-arrow-color: #FFFFFF;
+    scrollbar-track-color: lightgray;
+}
+
+.content-elem.selected::-webkit-scrollbar {
+    width: 5px;
+    background-color: lightgray;
+}
+
+.content-elem.selected::-webkit-scrollbar-track {
+    border-radius: 7px;
+}
+
+.content-elem.selected::-webkit-scrollbar-thumb  {
+    background-color: #0e72a4;
+    -webkit-border-radius: 7px;
+}
